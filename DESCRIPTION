@@ -1,12 +1,11 @@
 Package: nctools
 Title: What the Package Does (One Line, Title Case)
 Version: 0.1
-Authors@R: 
-person(given = "Odran",
-family = "Sourdeval",
-role = c("aut", "cre"),
-email = "odran.sourdeval@univ-lille.fr",
-comment = c(ORCID = "YOUR-ORCID-ID"))
+Authors@R:
+    person(given = "Odran",
+           family = "Sourdeval",
+           role = c("aut", "cre"),
+           email = "odran.sourdeval@univ-lille.fr")
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8

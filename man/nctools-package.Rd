@@ -10,6 +10,6 @@ TBC}
 What the package does (one paragraph).
 }
 \author{
-\strong{Maintainer}: Odran Sourdeval \email{odran.sourdeval@univ-lille.fr} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Odran Sourdeval \email{odran.sourdeval@univ-lille.fr}
 
 }

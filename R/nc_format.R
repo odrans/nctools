@@ -11,9 +11,9 @@ nc_format <- function(df, df.setdims) {
   l$vars <- plyr::llply(vars, function(varname) {
     order.dims <- df.setdims[[varname]] %>% .[!is.na(.)]
     formula.dims <- paste(rownames(df.setdims)[order.dims], collapse = " ~ ")
-    var.out <- reshape2::acast(df, formula.dims, drop=FALSE, value.var = varname)
+    var.out <- reshape2::acast(df, formula.dims, drop=FALSE, value.var = varname, fun.aggregate = mean)
     names(attr(var.out, "dimnames")) <- rownames(df.setdims)[order.dims]
-    var.out[!is.na(var.out)] <- -999
+    var.out[is.na(var.out)] <- -999
     return(var.out)
   }); names(l$vars) <- vars
 
